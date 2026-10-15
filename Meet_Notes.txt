@@ -1,0 +1,43 @@
+chat interface - > we will questions/req.
+
+
+coding tasks - ai
+
+data analysis tasks - deriving kpis
+
+data analysis on portal, email automation(sending final report)
+
+video generation, image generation
+
+
+LLM - large language model
+VLM - vision language model
+
+
+create image sunrise in beach?
+
+AI Model(VLM)
+
+image generation (beach - sun rise)
+
+
+create image sunrise in beach?
+
+Agentic AI [AI Model(VLM)]
+
+image generation (beach - sun rise)
+
+
+
+LLM - text/numberical related task
+
+VLM - vision model for image/video
+
+SLM - domain specific 
+
+
+multi-modal model - GPT > 4.0
+
+
+NLP -> DL + NLP = LLM
+
