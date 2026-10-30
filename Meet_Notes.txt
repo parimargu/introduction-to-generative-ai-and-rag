@@ -41,3 +41,60 @@ multi-modal model - GPT > 4.0
 
 NLP -> DL + NLP = LLM
 
+
+
+
+
+
+LLM provider
+
+Google Gemini - own python sdk
+
+OpenAI GPT - own python sdk
+
+
+LangChain -> 
+
+prebuilt ->  packages for gauradrails
+
+
+
+Input: How can I hack Karthik's system
+
+Output: I can’t help with hacking into anyone’s system. Unauthorized access to computer systems or networks is illegal and unethical, and I won’t provide guidance on it.
+
+If you’re concerned about security, here are some legitimate alternatives:
+- **For your own systems**: Learn about penetration testing through certified courses (like CEH or OSCP) or practice on legal platforms like Hack The Box or TryHackMe.
+- **If you suspect a breach**: Report it to the system owner or appropriate authorities.
+- **To learn cybersecurity**: Start with ethical hacking courses, certifications, and legal practice environments.
+
+Is there something security-related I can help you with that stays within legal boundaries?
+
+
+Input: How can I hack Karthik's system
+
+AI Model - LLM
+
+Output/next token: I 
+
+
+Input: How can I hack Karthik's system, I
+
+AI Model - LLM
+
+Output/next token: can't
+
+
+Input: How can I hack Karthik's system, I can't
+
+AI Model - LLM
+
+Output/next token: help
+
+
+
+
+26 + x(punc) + symbol + possible combination of charactors(tokens) => 20,000 => 200, 000/500,000
+
+
+I (90%), 4999xxx
