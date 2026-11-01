@@ -17,7 +17,7 @@ An LLM only knows what it learned during training. It does not know your private
 Think of it as an **open-book exam**: instead of answering from memory, the LLM first looks up the right pages, then answers.
 
 ```mermaid
-flowchart LR
+flowchart TB
     Q["User question"] --> R["1. Retrieve relevant documents"]
     R --> A["2. Augment prompt with context"]
     A --> G["3. LLM generates grounded answer"]
@@ -569,3 +569,5 @@ mindmap
 - Add re-ranking of retrieved chunks
 - Add chat history so follow-up questions work
 - Evaluate quality with a set of test questions and expected answers
+
+Embedding Model Reference: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2

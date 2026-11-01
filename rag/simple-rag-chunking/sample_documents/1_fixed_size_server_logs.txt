@@ -1,0 +1,36 @@
+2026-10-28 09:00:01 INFO  [api-gateway] Service started on port 8080, version 3.4.1
+2026-10-28 09:00:02 INFO  [api-gateway] Connected to Redis cache at redis-01:6379
+2026-10-28 09:00:03 INFO  [auth-service] Loaded 3 OAuth providers: google, github, microsoft
+2026-10-28 09:00:05 INFO  [order-service] Connected to PostgreSQL database orders_db (pool size 20)
+2026-10-28 09:00:06 INFO  [payment-service] Payment provider RazorPay sandbox mode disabled, live mode active
+2026-10-28 09:05:12 INFO  [api-gateway] GET /api/products 200 OK 34ms
+2026-10-28 09:05:15 INFO  [api-gateway] GET /api/products/1182 200 OK 21ms
+2026-10-28 09:07:44 WARN  [auth-service] Failed login attempt for user priya.k@example.com from IP 49.207.11.20 (attempt 1)
+2026-10-28 09:07:58 WARN  [auth-service] Failed login attempt for user priya.k@example.com from IP 49.207.11.20 (attempt 2)
+2026-10-28 09:08:13 WARN  [auth-service] Failed login attempt for user priya.k@example.com from IP 49.207.11.20 (attempt 3)
+2026-10-28 09:08:13 ERROR [auth-service] Account priya.k@example.com locked for 15 minutes after 3 failed attempts
+2026-10-28 09:15:30 INFO  [order-service] Order ORD-55120 created by user arjun.m@example.com, total INR 2,499
+2026-10-28 09:15:31 INFO  [payment-service] Payment initiated for ORD-55120 via UPI
+2026-10-28 09:15:36 INFO  [payment-service] Payment SUCCESS for ORD-55120, transaction id TXN-889201
+2026-10-28 09:30:00 INFO  [scheduler] Nightly report job skipped (runs at 02:00 only)
+2026-10-28 10:02:17 INFO  [api-gateway] GET /api/cart 200 OK 45ms
+2026-10-28 10:12:09 WARN  [order-service] Database connection pool at 85% capacity (17 of 20 in use)
+2026-10-28 10:14:40 WARN  [order-service] Database connection pool at 95% capacity (19 of 20 in use)
+2026-10-28 10:15:02 ERROR [order-service] Database connection pool exhausted, request timed out after 30000ms
+2026-10-28 10:15:02 ERROR [api-gateway] POST /api/orders 503 Service Unavailable 30012ms
+2026-10-28 10:15:20 INFO  [ops-bot] Auto-scaling triggered: order-service replicas increased from 2 to 4
+2026-10-28 10:16:45 INFO  [order-service] Database connection pool back to normal (8 of 20 in use)
+2026-10-28 10:42:33 ERROR [payment-service] RazorPay API returned HTTP 502 Bad Gateway for ORD-55187
+2026-10-28 10:42:34 WARN  [payment-service] Retrying payment for ORD-55187 (retry 1 of 3)
+2026-10-28 10:42:39 WARN  [payment-service] Retrying payment for ORD-55187 (retry 2 of 3)
+2026-10-28 10:42:45 INFO  [payment-service] Payment SUCCESS for ORD-55187 on retry 2, transaction id TXN-889377
+2026-10-28 11:00:00 INFO  [cache-service] Cache hit ratio for last hour: 92.4%
+2026-10-28 11:20:18 WARN  [api-gateway] Rate limit exceeded for API key ak_live_7f3e from IP 103.21.58.4 (120 requests/minute)
+2026-10-28 11:20:19 INFO  [api-gateway] IP 103.21.58.4 temporarily blocked for 10 minutes
+2026-10-28 12:01:05 INFO  [deploy-bot] Deployment started: payment-service v2.8.0 by devops user kiran.r
+2026-10-28 12:03:40 INFO  [deploy-bot] Deployment finished: payment-service v2.8.0 healthy on 3 of 3 pods
+2026-10-28 12:30:11 ERROR [email-service] SMTP server smtp.mailhost.in refused connection, 214 order confirmation emails queued
+2026-10-28 12:45:50 INFO  [email-service] SMTP connection restored, 214 queued emails sent successfully
+2026-10-28 13:10:02 WARN  [disk-monitor] Disk usage on log-server-02 at 88% (threshold 85%)
+2026-10-28 13:10:03 INFO  [disk-monitor] Old log archives older than 30 days compressed, disk usage now 61%
+2026-10-28 14:00:00 INFO  [api-gateway] Daily request count so far: 1,284,550 requests, error rate 0.21%
